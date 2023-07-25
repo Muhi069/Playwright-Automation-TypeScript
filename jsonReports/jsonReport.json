@@ -1,0 +1,270 @@
+{
+  "config": {
+    "configFile": "C:\\BS-1367\\playwright js, ts web automation\\playwright.config.ts",
+    "rootDir": "C:/BS-1367/playwright js, ts web automation",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1,
+      "totalTime": 75481.42299999297
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/BS-1367/playwright js, ts web automation/test-results",
+        "repeatEach": 1,
+        "retries": 2,
+        "id": "",
+        "name": "",
+        "testDir": "C:/BS-1367/playwright js, ts web automation",
+        "testIgnore": [],
+        "testMatch": [
+          "pomtest/addToCart.test.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.36.1",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "pomtest\\addToCart.test.ts",
+      "file": "pomtest/addToCart.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "page object model test",
+          "file": "pomtest/addToCart.test.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Register test_01",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 16885,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-25T15:58:38.690Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-96095a7207587b0c4d34",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "Login test_02",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 9931,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-25T15:58:55.899Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-71ddb3cf728d65bfbfd8",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 29,
+              "column": 7
+            },
+            {
+              "title": "add to cart test_03",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 30000,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\BS-1367\\playwright js, ts web automation\\pages\\desktopTopTrending.ts",
+                            "column": 17,
+                            "line": 13
+                          },
+                          "message": "Error: locator.waitFor: Target closed\n=========================== logs ===========================\nwaiting for locator('xpath=//a[.=\\'View Cart \\']') to be visible\n============================================================\n\n\u001b[90m   at \u001b[39mpages\\desktopTopTrending.ts:13\n\n\u001b[0m \u001b[90m 11 |\u001b[39m   \u001b[36masync\u001b[39m isToastVisible() {\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m     \u001b[36mconst\u001b[39m toast \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m\"//a[.='View Cart ']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 13 |\u001b[39m     \u001b[36mawait\u001b[39m toast\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m\"visible\"\u001b[39m })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mreturn\u001b[39m toast\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 16 |\u001b[39m }\u001b[0m\n\n\u001b[2m    at specialHotPage.isToastVisible (C:\\BS-1367\\playwright js, ts web automation\\pages\\desktopTopTrending.ts:13:17)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\playwright js, ts web automation\\pomtest\\addToCart.test.ts:46:41\u001b[22m"
+                        },
+                        {
+                          "message": "Pending operations:\n  - locator.waitFor at pages\\desktopTopTrending.ts:13:17\n"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2023-07-25T15:59:05.832Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\BS-1367\\playwright js, ts web automation\\test-results\\pomtest-addToCart-page-object-model-test-add-to-cart-test-03\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\BS-1367\\playwright js, ts web automation\\test-results\\pomtest-addToCart-page-object-model-test-add-to-cart-test-03\\test-failed-1.png"
+                        }
+                      ]
+                    },
+                    {
+                      "workerIndex": 1,
+                      "status": "failed",
+                      "duration": 11151,
+                      "error": {
+                        "message": "page.click: Target page, context or browser has been closed",
+                        "stack": "Error: page.click: Target page, context or browser has been closed\n    at homePage.ClickOnDesktopFromTopTrending (C:\\BS-1367\\playwright js, ts web automation\\pages\\homePage.ts:11:21)\n    at C:\\BS-1367\\playwright js, ts web automation\\pomtest\\addToCart.test.ts:45:20",
+                        "location": {
+                          "file": "C:\\BS-1367\\playwright js, ts web automation\\pages\\homePage.ts",
+                          "column": 21,
+                          "line": 11
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39mpages\\homePage.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickOnDesktopFromTopTrending\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"//img[@alt='Desktops']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\BS-1367\\playwright js, ts web automation\\pages\\homePage.ts",
+                            "column": 21,
+                            "line": 11
+                          },
+                          "message": "Error: page.click: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39mpages\\homePage.ts:11\n\n\u001b[0m \u001b[90m  9 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 10 |\u001b[39m   \u001b[36masync\u001b[39m \u001b[33mClickOnDesktopFromTopTrending\u001b[39m() {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 11 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mclick(\u001b[32m\"//img[@alt='Desktops']\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 12 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 13 |\u001b[39m }\u001b[0m\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\n\u001b[2m    at homePage.ClickOnDesktopFromTopTrending (C:\\BS-1367\\playwright js, ts web automation\\pages\\homePage.ts:11:21)\u001b[22m\n\u001b[2m    at C:\\BS-1367\\playwright js, ts web automation\\pomtest\\addToCart.test.ts:45:20\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2023-07-25T15:59:37.494Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\BS-1367\\playwright js, ts web automation\\test-results\\pomtest-addToCart-page-object-model-test-add-to-cart-test-03-retry1\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\BS-1367\\playwright js, ts web automation\\pages\\homePage.ts",
+                        "column": 21,
+                        "line": 11
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "status": "interrupted",
+                      "duration": 3617,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2023-07-25T15:59:49.492Z",
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\BS-1367\\playwright js, ts web automation\\test-results\\pomtest-addToCart-page-object-model-test-add-to-cart-test-03-retry2\\video.webm"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\BS-1367\\playwright js, ts web automation\\test-results\\pomtest-addToCart-page-object-model-test-add-to-cart-test-03-retry2\\test-failed-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "1c188a18f2ecab048a02-72a46c34c816b43845a9",
+              "file": "pomtest/addToCart.test.ts",
+              "line": 38,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
